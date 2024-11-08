@@ -6,6 +6,7 @@ Para el apartado de crear un wireframe d'aplicació web en FIGMA lo dividiremos 
 El objetivo és la creación de un sistema de fichaje para una institución donde quede registrado quien entra y sale una persona de una empresa como en el trabajo, lo que haremos es una pagina web donde cuando entren a la pagina puedan registrarse y luego iniciar sesión para asi saber quien esta entrando y que sus datos queden registrados en la base de datos del registro.
 
 1. Para ello empezaremos en la primera pagina que es una bienvenida que da a los usuarios que entren de cual es la función principal de esta pagina que es la de hacer un control de fichaje en tiempo real, y un apartado de contacto por si llegan a tener algun problema a la hora de hacer el registro.
+
 ![image](https://github.com/user-attachments/assets/82459c3b-4af1-422a-87b4-9ff95b324db3)
 
 
