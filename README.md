@@ -27,13 +27,13 @@ El objetivo és la creación de un sistema de fichaje para una institución dond
 
 
 
-6. Ahora veremos como funciona el registro, vemos que tendremos tres funciones en esta pagina, en primer apartado nos aparecera nuestro nombre de usuario o correo para ver que somos nosotros quienes estamos haciendo el fichaje, abajo en el segundo apartado aparecera la fecha y la hora que estamos haciendo el fichaje para saber que estamos fichando a esa hora y que no nos confundamos por si estamos fichando antes de la hora de salida o despues de la hora de entrada.
+7. Ahora veremos como funciona el registro, vemos que tendremos tres funciones en esta pagina, en primer apartado nos aparecera nuestro nombre de usuario o correo para ver que somos nosotros quienes estamos haciendo el fichaje, abajo en el segundo apartado aparecera la fecha y la hora que estamos haciendo el fichaje para saber que estamos fichando a esa hora y que no nos confundamos por si estamos fichando antes de la hora de salida o despues de la hora de entrada.
 Y por el último tenemos un desplejable que si le damos nos aparecera varias opciones como 'Almorzar' para avisar que a esa hora estamos desayunando en la hora de descanso y despues tenemos las hora de 'entrada' que es cuando llegas al trabajo y saber la puntualidad de los trabajadores o usuarios de la emmpresa o institución y por otro lado tenemos el de 'salida' que es para indicar a la hora que hemos salido del trabajo y así llevar un control de la persona.
 ![image](https://github.com/user-attachments/assets/1eca636b-a166-445e-8f03-ee322a344219)
 
 
 
-7. Y por último tenemos la pagina de 'historia de registro', que aqui veremos el control de fichajes que llevamos, y tambien para ver que se alla guardado correctamente el fichaje en la pagina anterior del registro y que así la empresa o en la institutción vean los fichajes que lleva esa persona y así lleva el control de todas las personas.
+8. Y por último tenemos la pagina de 'historia de registro', que aqui veremos el control de fichajes que llevamos, y tambien para ver que se alla guardado correctamente el fichaje en la pagina anterior del registro y que así la empresa o en la institutción vean los fichajes que lleva esa persona y así lleva el control de todas las personas.
 ![image](https://github.com/user-attachments/assets/fa29ebf5-62c1-4407-8cb0-e3785786534f)
 
 
