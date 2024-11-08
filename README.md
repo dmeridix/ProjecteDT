@@ -11,6 +11,7 @@ El objetivo és la creación de un sistema de fichaje para una institución dond
 
 
 2. En la primera pagina hemos visto que en el apartado del 'HEADER', hay diferentes botones al lado del logo y el nombre de la pagina, tenemos el botón para registrarse o iniciar sesión, para los usuarios que lleguen a la empresa por un ejemplo tendran la opción de 'iniciar sesión' y cuando le dan les aparecera la pagina para iniciar sesión y darle a la opción 'Continuar con Google' y seleccionar su correo de empresa o personal y ya con eso se les hara un registro automaticamente de ese usuario. Y cuando otro dia quieran iniciar sesión otra vez como se le ha cerrado la sesión directamente pone el correo suyo y ya podra acceder.
+
 ![image](https://github.com/user-attachments/assets/66c7a1f0-4067-4251-a766-2d8937a4d39d)
 
 
