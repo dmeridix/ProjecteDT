@@ -87,4 +87,3 @@ Además de las funcionalidad de ediatr marcaje, el administrador tiene acceso a 
 ---
 ## Enlace Figma
 https://www.figma.com/design/Pzd7ATRbGheYRKQswwkhY5/Wireframe-projecte?node-id=1-2&t=qHNvOIDonUpMxWAL-1
-/user-attachments/assets/84615e49-46ff-41ea-90e0-437be3f863f3)
