@@ -41,7 +41,7 @@ Registre d’un alumne o professor
 - Es defineix un rol a la taula rol (exemple: "Professor").
 - Es vincula el rol amb un permís específic a la taula permiso (exemple: "Pot modificar assistència").
 - Es genera un rol_id.
-- 
+  
 3.Registre de la persona
 - Es registra la persona a la taula persona amb les dades personals, el grupo_id, i el rol_id.
 Exemple: "Joan Pérez", assignat al grup "Grup 1A" i amb rol de "Professor".
