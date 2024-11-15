@@ -2,30 +2,6 @@
 
 
 DAW:
-Para el apartado de crear un wireframe d'aplicació web en FIGMA lo dividiremos en difentes secciones para que los usuarios que quieran hacer su registro de fichaje puedan llevar un control de fichaje de ellos mismos.
-El objetivo és la creación de un sistema de fichaje para una institución donde quede registrado quien entra y sale una persona de una empresa como en el trabajo, lo que haremos es una pagina web donde cuando entren a la pagina puedan registrarse y luego iniciar sesión para asi saber quien esta entrando y que sus datos queden registrados en la base de datos del registro.
-
-1. Para ello empezaremos en la primera pagina que es una bienvenida que da a los usuarios que entren de cual es la función principal de esta pagina que es la de hacer un control de fichaje en tiempo real, y un apartado de contacto por si llegan a tener algun problema a la hora de hacer el registro.
-
-![image](https://github.com/user-attachments/assets/82459c3b-4af1-422a-87b4-9ff95b324db3)
-
-
-
-2. En la primera pagina hemos visto que en el apartado del 'HEADER', hay diferentes botones al lado del logo y el nombre de la pagina, tenemos el botón para registrarse o iniciar sesión, para los usuarios que lleguen a la empresa por un ejemplo tendran la opción de 'iniciar sesión' y cuando le dan les aparecera la pagina para iniciar sesión y darle a la opción 'Continuar con Google' y seleccionar su correo de empresa o personal y ya con eso se les hara un registro automaticamente de ese usuario. Y cuando otro dia quieran iniciar sesión otra vez como se le ha cerrado la sesión directamente pone el correo suyo y ya podra acceder.
-
-![image](https://github.com/user-attachments/assets/66c7a1f0-4067-4251-a766-2d8937a4d39d)
-
-
-
-3. Si no tenemos una cuenta creada, podemos registrarla con tus datos personales para que queden guardados en la base de datos de la web con sus secciones para poner el nombre, apellidos y mas informaticón tuya, luego aceptar las condiciones de la pagina y un boton que
-  dice 'CREA TU CUENTA' que al darle al boton ya tendras hecho el registro con tu correo y ya poder iniciar sesión para poder hacer tu fichaje y se quede guardado en la base de datos en este caso en el historial de registro.
-![image](https://github.com/user-attachments/assets/a7f56ddc-49b3-4d1a-802d-73e6612bc906)
-
-
-
-
-5. Una vez que ya hemos el registro y ya podemos acceder al apartado para hacer el registro y mirar el historial de registro, procederemos a ver la funcionalidad de esta pagina y como funciona, vemos que una vez dentro hay un apartado que pone 'Instruccions', que nos explicara como hacer el registro y tendremos dos botones, uno que es para ir a la pagina del registro y el otro es para ver el historial para comprobar que se ha hecho el registro correctamente.
-![image](https://github.com/user-attachments/assets/48324844-408c-4b8e-a8fd-80227f9ef46a)
 
 
 
@@ -83,6 +59,53 @@ En esta sección, el administrador puede modificar el estado de los marcajes (pr
 
 ### Otras Funcionalidades
 Además de las funcionalidad de ediatr marcaje, el administrador tiene acceso a las mismas opciones que los usuarios **Alumno** y **Profesor** (pasar lista y horarios).
+
+
+# Guía de Estilos
+
+## Tipografía
+La tipografía utilizada en toda la aplicación es **Inter**, una fuente moderna y legible que asegura una buena experiencia de usuario. Se utiliza **negrita** para resaltar las diferentes secciones de la página, así como para destacar el encabezado principal de la aplicación.
+
+![image](https://github.com/user-attachments/assets/62f7c5b5-6d54-4761-97fd-014166796385)
+
+## Estilo de Colores
+Se ha utilizado una paleta de colores consistente en toda la aplicación y la página web. El **encabezado** (header) se distingue claramente del resto del contenido a través de un color de fondo diferente, lo que facilita la navegación.
+
+![Imagen de la paleta de colores](https://github.com/user-attachments/assets/c5058590-ba81-46c5-ba65-bd5ede9ae81b)
+
+## Tamaño de Letra
+Se han establecido diferentes tamaños de fuente para diferenciar **títulos** y **contenido** de manera clara. Además, los botones tienen un tamaño de letra optimizado para asegurar su legibilidad y facilitar la interacción del usuario.
+
+![Imagen del tamaño de la letra](https://github.com/user-attachments/assets/d3d9707a-4f38-401d-ad4c-fc4c680f9b3a)
+![Imagen del tamaño de la letra de los botones](https://github.com/user-attachments/assets/a8102935-762d-4091-8d21-a2ba6d812920)
+
+## Componentes (Botones y Controles)
+Se han utilizado **componentes interactivos**, como botones, para conectar diferentes páginas de la aplicación. Para mejorar la usabilidad, cuando el usuario está en una página específica, el botón correspondiente en el menú cambia a un tono gris, indicándole su ubicación actual.
+
+![Imagen de botones del menú](https://github.com/user-attachments/assets/71c887cb-f035-4942-a0a4-917228b7cb18)
+
+Además, se ha implementado un **panel desplegable** para mostrar de manera ordenada los diferentes grupos, facilitando la navegación y la consulta de información.
+
+![image](https://github.com/user-attachments/assets/8ad0ab98-1d94-47a3-b3d3-31e1c2718189)
+
+
+Para las funciones que implican la **subida de archivos**, se ha utilizado un componente visual que simula un área para arrastrar y soltar archivos, asegurando una experiencia de usuario intuitiva.
+
+![Imagen del componente de subida de archivos](https://github.com/user-attachments/assets/e2c6d690-e98c-4e99-9482-eadda270e903)
+
+## Iconos
+Se han integrado **iconos** gráficos en la interfaz, como las flechas, para indicar que ciertas áreas de la página tienen un comportamiento desplegable y mostrar más información al interactuar con ellas.
+
+![image](https://github.com/user-attachments/assets/cc42535c-2cf4-48bd-b32a-ae3e6993b3f4)
+
+
+## Enlace a Figma
+Para visualizar y explorar los wireframes de la aplicación, puedes acceder al siguiente enlace de Figma:
+
+[Figma Wireframe Projecte](https://www.figma.com/design/Pzd7ATRbGheYRKQswwkhY5/Wireframe-projecte?node-id=1-2&t=qHNvOIDonUpMxWAL-1)
+
+
+
 
 ---
 ## Enlace Figma
