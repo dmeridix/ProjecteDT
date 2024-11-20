@@ -208,3 +208,16 @@ Wireframe APP:![image](https://github.com/user-attachments/assets/cc42535c-2cf4-
 Para visualizar y explorar los wireframes de la aplicación, puedes acceder al siguiente enlace de Figma:
 
 [Figma Wireframe Projecte](https://www.figma.com/design/Pzd7ATRbGheYRKQswwkhY5/Wireframe-projecte?node-id=1-2&t=qHNvOIDonUpMxWAL-1)
+
+
+Captura get marcages
+![image](https://github.com/user-attachments/assets/603eb8f9-7c56-4181-bec5-33f444048bbe)
+
+Captura get de un id en concreto de marcage
+![image](https://github.com/user-attachments/assets/ed04ee33-6ece-4fbe-9160-90b7138f71bf)
+
+Captura get personas
+![image](https://github.com/user-attachments/assets/3630b00e-eff9-49db-8ada-edf82b594b91)
+
+Captura get de un id en concreto de persona
+![image](https://github.com/user-attachments/assets/85e82711-ddac-4440-b81c-fe42e56bf364)
