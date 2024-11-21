@@ -210,6 +210,8 @@ Para visualizar y explorar los wireframes de la aplicación, puedes acceder al s
 [Figma Wireframe Projecte](https://www.figma.com/design/Pzd7ATRbGheYRKQswwkhY5/Wireframe-projecte?node-id=1-2&t=qHNvOIDonUpMxWAL-1)
 
 
+SPRINT3:
+
 Captura get marcages
 ![image](https://github.com/user-attachments/assets/603eb8f9-7c56-4181-bec5-33f444048bbe)
 - En esta captura comprobamos que busca los marcajes que se han hecho de entrada y salida por parte de los usuarios. Vemos que en el registro de la base de datos guarda información de la ID del marcaje, la 'tarjeta_id' que es la identificación de la tarjeta que esta usando el usuario, seguimos con la 'fecha_lectura' que es de tipo 'DATETIME' que en este campo saldra la fecha y hora de cuando hizo el marcaje el usuario, y finalmente el tipo_lectura que tambien sera 'DATETIME' que aquí mostrara si ha hecho 'ENTRADA o SALIDA' por parte de la persona que haga el marcaje.
