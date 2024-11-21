@@ -212,12 +212,16 @@ Para visualizar y explorar los wireframes de la aplicación, puedes acceder al s
 
 Captura get marcages
 ![image](https://github.com/user-attachments/assets/603eb8f9-7c56-4181-bec5-33f444048bbe)
+- En esta captura comprobamos que busca los marcajes que se han hecho de entrada y salida por parte de los usuarios. Vemos que en el registro de la base de datos guarda información de la ID del marcaje, la 'tarjeta_id' que es la identificación de la tarjeta que esta usando el usuario, seguimos con la 'fecha_lectura' que es de tipo 'DATETIME' que en este campo saldra la fecha y hora de cuando hizo el marcaje el usuario, y finalmente el tipo_lectura que tambien sera 'DATETIME' que aquí mostrara si ha hecho 'ENTRADA o SALIDA' por parte de la persona que haga el marcaje.
 
 Captura get de un id en concreto de marcage
 ![image](https://github.com/user-attachments/assets/ed04ee33-6ece-4fbe-9160-90b7138f71bf)
+- Aquí continuamos con el registro de la BBDD con los marcajes, pero en este caso podremos buscar la mediante la ID que registro queremos buscar, por ejemplo si queremos buscar la ID del usuario de cuantas veces a fichado, pues mediante la ID podremos buscar sus registros de fichaje y así llevar un control.
 
 Captura get personas
 ![image](https://github.com/user-attachments/assets/3630b00e-eff9-49db-8ada-edf82b594b91)
+- Aqui procederemos a ser lo mismo pero esta vez con el registro en la BBDD en el apartado de 'Persones', aquí mostrara los usuarios registrados en la BBDD cada una con su información para identificar quien es quien, mediante la ID, nombre, apellidos, dni y aula.
 
 Captura get de un id en concreto de persona
 ![image](https://github.com/user-attachments/assets/85e82711-ddac-4440-b81c-fe42e56bf364)
+- Y por último si queremos buscar a una persona en concreta la podremos buscar con su ID, que para buscar a una persona especifica y sabemos su ID lo prodremos hacer de la siguiente manera 'IP/persones/{ID}', con esto facilitara la busqueda de la persona con la ID.
