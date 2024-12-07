@@ -1,5 +1,67 @@
 # ProjecteDT
 
+Diseño Base datos:
+
+![image](https://github.com/user-attachments/assets/6c8b62ca-4a9f-4686-a406-8800bac42021)
+
+Descripción de las tablas
+
+Grupo:
+Define els grups dins de l’organització, com ara classes d’estudiants o equips de treball.
+Cada grup té un ID únic, un nom, una descripció, i un horari associat.
+
+Permiso:
+Representa permisos específics (per exemple, accés a determinades funcions o àrees).
+Inclou un ID únic, un nom (exemple: "Gestionar alumnes") i una descripció del que permet fer.
+
+Rol:
+Defineix els rols que tenen els usuaris (per exemple, Alumne, Professor o Administrador).
+Conté un ID únic, un nom, una descripció, i està relacionat amb la taula permiso per indicar quins permisos s’associen al rol.
+
+Persona:
+Emmagatzema les dades de les persones registrades (alumnes, professors o administradors).
+Té un ID únic, informació personal com nom, cognom i DNI, i està relacionada amb un grup (grupo_id) i un rol (rol_id).
+També inclou un camp aula per assignar una ubicació específica.
+
+Tarjeta:
+Registra les targetes RFID assignades a les persones per identificar-les.
+Cada targeta té un ID únic, un codi RFID, una referència a una persona, la data d’assignació, i un estat (Activa o Inactiva).
+
+RegistroTarjeta:
+Registra les lectures de les targetes RFID.
+Cada registre inclou un ID únic, una referència a una targeta (tarjeta_id), la data de lectura, i el tipus de lectura (Entrada o Salida).
+
+Explicació del funcionament
+Registre d’un alumne o professor
+1.  Creació del grup:
+- Es registra un grup a la taula grupo amb el nom i l’horari (per exemple, "Grup 1A", horari "8:00-14:00").
+- Es genera un grupo_id automàticament.
+ 
+2. Definició del rol:
+- Es defineix un rol a la taula rol (exemple: "Professor").
+- Es vincula el rol amb un permís específic a la taula permiso (exemple: "Pot modificar assistència").
+- Es genera un rol_id.
+  
+3.Registre de la persona
+- Es registra la persona a la taula persona amb les dades personals, el grupo_id, i el rol_id.
+Exemple: "Joan Pérez", assignat al grup "Grup 1A" i amb rol de "Professor".
+- L’ID de la persona (persona_id) es genera automàticament.
+  
+4.Assignació de la targeta RFID
+- Es registra una targeta RFID a la taula Tarjeta amb un codi únic.
+- Es vincula la targeta amb el persona_id de la persona assignada.
+- Es defineix l’estat com Activa.
+
+  
+Ús del sistema i permisos
+- Quan una persona fa servir la targeta, es registra a RegistroTarjeta:
+- Es llegeix el codi de la targeta, es busca a Tarjeta per obtenir el id i la persona associada.
+- S'insereix un registre a RegistroTarjeta amb el tipus de lectura (Entrada o Salida).
+- 
+Els rols determinen què pot fer la persona:
+- Un alumne pot veure la seva pròpia informació (consultant la seva fila a persona).
+- Un professor pot veure i modificar l’assistència dels alumnes del seu grup (consultant a grupo).
+- Un administrador té accés complet a totes les dades i registres.
 
 DAW:
 Para el apartado de crear un wireframe d'aplicació web en FIGMA lo dividiremos en difentes secciones para que los usuarios que quieran hacer su registro de fichaje puedan llevar un control de fichaje de ellos mismos.
@@ -84,6 +146,84 @@ En esta sección, el administrador puede modificar el estado de los marcajes (pr
 ### Otras Funcionalidades
 Además de las funcionalidad de ediatr marcaje, el administrador tiene acceso a las mismas opciones que los usuarios **Alumno** y **Profesor** (pasar lista y horarios).
 
----
-## Enlace Figma
-https://www.figma.com/design/Pzd7ATRbGheYRKQswwkhY5/Wireframe-projecte?node-id=1-2&t=qHNvOIDonUpMxWAL-1
+
+# Guía de Estilos
+
+## Tipografía
+La tipografía utilizada en toda la aplicación es **Inter**, una fuente moderna y legible que asegura una buena experiencia de usuario. Se utiliza **negrita** para resaltar las diferentes secciones de la página, así como para destacar el encabezado principal de la aplicación.
+
+Wireframe APP:![image](https://github.com/user-attachments/assets/62f7c5b5-6d54-4761-97fd-014166796385)
+
+Wireframe WEB:![image](https://github.com/user-attachments/assets/6f2821f0-043b-4b0f-b090-7f5614b8253b)
+
+
+## Estilo de Colores
+Se ha utilizado una paleta de colores consistente en toda la aplicación y la página web. El **encabezado** (header) se distingue claramente del resto del contenido a través de un color de fondo diferente, lo que facilita la navegación.
+
+Wireframe APP:![Imagen de la paleta de colores](https://github.com/user-attachments/assets/c5058590-ba81-46c5-ba65-bd5ede9ae81b)
+
+Wireframme WEB:![image](https://github.com/user-attachments/assets/c896ef88-213e-4aa4-8a9a-f9ca411b2fd3)
+
+## Tamaño de Letra
+Se han establecido diferentes tamaños de fuente para diferenciar **títulos** y **contenido** de manera clara. Además, los botones tienen un tamaño de letra optimizado para asegurar su legibilidad y facilitar la interacción del usuario.
+
+Wireframe APP:![Imagen del tamaño de la letra](https://github.com/user-attachments/assets/d3d9707a-4f38-401d-ad4c-fc4c680f9b3a)
+
+Wireframe APP:![Imagen del tamaño de la letra de los botones](https://github.com/user-attachments/assets/a8102935-762d-4091-8d21-a2ba6d812920)
+
+Wireframe WEB: ![image](https://github.com/user-attachments/assets/f11a8ba6-d743-4034-9b72-67c078bfd895)
+
+Wireframe WEB: ![image](https://github.com/user-attachments/assets/7f4f56ee-b183-4b3b-99d6-733c54ba4d38)
+
+
+## Componentes (Botones y Controles)
+Se han utilizado **componentes interactivos**, como botones, para conectar diferentes páginas de la aplicación. Para mejorar la usabilidad, cuando el usuario está en una página específica, el botón correspondiente en el menú cambia a un tono gris, indicándole su ubicación actual.
+
+Wireframe APP:![Imagen de botones del menú](https://github.com/user-attachments/assets/71c887cb-f035-4942-a0a4-917228b7cb18)
+
+Además, se ha implementado un **panel desplegable** para mostrar de manera ordenada los diferentes grupos, facilitando la navegación y la consulta de información.
+
+Wireframe APP:![image](https://github.com/user-attachments/assets/8ad0ab98-1d94-47a3-b3d3-31e1c2718189)
+
+Wireframe WEB: ![image](https://github.com/user-attachments/assets/003222f8-e0fb-4909-9e70-8af47a3692e6)
+
+Aqui tenemos un boton para 'Continuar' cuando se introduce el correo o otra opción que es 'Continuar con Google' para poder registrarte con un correo de Google.
+
+
+Para las funciones que implican la **subida de archivos**, se ha utilizado un componente visual que simula un área para arrastrar y soltar archivos, asegurando una experiencia de usuario intuitiva.
+
+Wireframe APP:![Imagen del componente de subida de archivos](https://github.com/user-attachments/assets/e2c6d690-e98c-4e99-9482-eadda270e903)
+
+Wireframe WEB: ![image](https://github.com/user-attachments/assets/d05b3636-a83e-4227-84b6-4bc459f677b8)
+Dos botones para enviar a la pagina de Registrar y poder hacer el fichaje de entrada y salida, y el otro es para enviarte al historial y poder ver tus últimos fichajes.
+
+
+## Iconos
+Se han integrado **iconos** gráficos en la interfaz, como las flechas, para indicar que ciertas áreas de la página tienen un comportamiento desplegable y mostrar más información al interactuar con ellas.
+
+Wireframe APP:![image](https://github.com/user-attachments/assets/cc42535c-2cf4-48bd-b32a-ae3e6993b3f4)
+
+
+## Enlace a Figma
+Para visualizar y explorar los wireframes de la aplicación, puedes acceder al siguiente enlace de Figma:
+
+[Figma Wireframe Projecte](https://www.figma.com/design/Pzd7ATRbGheYRKQswwkhY5/Wireframe-projecte?node-id=1-2&t=qHNvOIDonUpMxWAL-1)
+
+
+SPRINT3:
+
+Captura get marcages
+![image](https://github.com/user-attachments/assets/603eb8f9-7c56-4181-bec5-33f444048bbe)
+- En esta captura comprobamos que busca los marcajes que se han hecho de entrada y salida por parte de los usuarios. Vemos que en el registro de la base de datos guarda información de la ID del marcaje, la 'tarjeta_id' que es la identificación de la tarjeta que esta usando el usuario, seguimos con la 'fecha_lectura' que es de tipo 'DATETIME' que en este campo saldra la fecha y hora de cuando hizo el marcaje el usuario, y finalmente el tipo_lectura que tambien sera 'DATETIME' que aquí mostrara si ha hecho 'ENTRADA o SALIDA' por parte de la persona que haga el marcaje.
+
+Captura get de un id en concreto de marcage
+![image](https://github.com/user-attachments/assets/ed04ee33-6ece-4fbe-9160-90b7138f71bf)
+- Aquí continuamos con el registro de la BBDD con los marcajes, pero en este caso podremos buscar la mediante la ID que registro queremos buscar, por ejemplo si queremos buscar la ID del usuario de cuantas veces a fichado, pues mediante la ID podremos buscar sus registros de fichaje y así llevar un control.
+
+Captura get personas
+![image](https://github.com/user-attachments/assets/3630b00e-eff9-49db-8ada-edf82b594b91)
+- Aqui procederemos a ser lo mismo pero esta vez con el registro en la BBDD en el apartado de 'Persones', aquí mostrara los usuarios registrados en la BBDD cada una con su información para identificar quien es quien, mediante la ID, nombre, apellidos, dni y aula.
+
+Captura get de un id en concreto de persona
+![image](https://github.com/user-attachments/assets/85e82711-ddac-4440-b81c-fe42e56bf364)
+- Y por último si queremos buscar a una persona en concreta la podremos buscar con su ID, que para buscar a una persona especifica y sabemos su ID lo prodremos hacer de la siguiente manera 'IP/persones/{ID}', con esto facilitara la busqueda de la persona con la ID.
