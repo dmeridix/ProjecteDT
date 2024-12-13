@@ -29,7 +29,7 @@ El objetivo és la creación de un sistema de fichaje para una institución dond
 
 
 5.En este apartado una vez que clicamos en la opción registrar nos aparecera nuestro usuario para que se vea que somos nosotros quien hacemos el fichaje, la fecha y hora a la que se hace el fichaje y ponemos si queremos hacer fichaje de entrada o salida.
-![{A4D159E0-A94A-4D78-989A-8CBC09430A1A}](https://github.com/user-attachments/assets/ef485389-10cd-4307-87dd-2af9e26ed965)
+![{D123D4AC-53A6-47AE-B9D8-4C15EE601419}](https://github.com/user-attachments/assets/a6dbed4e-a579-40ed-a76b-4329c5c2984a)
 
 
 6. Y por último tenemos el 'Historia de fichaje que es para confirmar que se ha hecho el fichaje correctamente y llevar un control de nuestro ultimos fichajes.
